@@ -1,0 +1,117 @@
+/* Fonts */
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla/static/Karla-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: Karla;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-radius: 0 0 25px 25px;
+    background-color: #387478;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #243642;
+    
+}
+
+.logo h3{
+    
+}
+
+ul.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+ul.nav-list li a{
+    text-decoration: none;
+    outline: none;
+    color: #E2F1E7;
+}
+
+.nav-list .nav-active{
+    border: solid #5D9B9F 6px;
+    background-color: #E2F1E7;
+    padding: 10px 20px; 
+    font-size: large;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+ul.nav-list li.nav-active a{
+    color: #243642;
+}
+.panjang{
+    display: inline-block;
+    height: 1280px;
+}
+
+

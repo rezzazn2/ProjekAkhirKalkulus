@@ -1,4 +1,4 @@
-# ProjekAkhirKalkulus
+# Projek AkhirKalkulus
 **Deskripsi singkat**: Jelaskan secara singkat apa yang dilakukan proyek ini dan apa tujuannya.
 
 ## Daftar Isi
