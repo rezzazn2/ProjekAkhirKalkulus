@@ -64,9 +64,16 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
+    padding-top: 30px;
     box-sizing: border-box;
     border-radius: 0 0 25px 25px;
     background-color: #387478;
+    transition: .3s;
+}
+nav.scrolled{
+    width: 100%;
+    position: fixed;
+    padding: 10px 50px;
 }
 
 .logo{
@@ -76,7 +83,14 @@ nav{
     font-weight: bold;
     letter-spacing: 0;
     color: #243642;
-    
+    background-color: #E2F1E7;
+    border: solid #5D9B9F 6px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+
 }
 
 .logo h3{
@@ -90,10 +104,19 @@ ul.nav-list{
 }
 
 
+ul.nav-list li{
+    transition: transform .1s;
+    transform-origin: center;
+}
+ul.nav-list li:hover{
+    transform: scale(1.1);
+}
 ul.nav-list li a{
     text-decoration: none;
     outline: none;
     color: #E2F1E7;
+    user-select: none;
+    
 }
 
 .nav-list .nav-active{
@@ -108,6 +131,9 @@ ul.nav-list li a{
 
 ul.nav-list li.nav-active a{
     color: #243642;
+}
+ul.nav-list li a i{
+    margin-right: 5px;
 }
 .panjang{
     display: inline-block;
