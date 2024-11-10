@@ -1,0 +1,172 @@
+section.tentang-kami{
+   background-color: var(--main-color);
+   padding: 20px 0;
+   box-sizing: border-box;
+   margin-top: 100px;
+}
+
+.tk-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    font-family: LD;
+    gap: 2em;
+}
+
+/* TK-Kiri */
+.tentang-kami-kiri{
+    font-family: LD-regular;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tk-header{
+    font-family:LD-bold;
+    color: var(--second-color);
+    font-size: 46px;
+}
+
+.tk-info{
+    margin: auto 0;
+}
+
+.tk-nama{
+    font-family: LD-bold;    
+    color: var(--main-darker-color);
+    font-size: 32px;
+    margin-top: 1em;
+    transition: .3s;
+}
+
+.tk-npm{
+    font-family: LD-regular;    
+    color: var(--second-color);
+    display: block;
+    font-size: 16px;
+    margin-bottom: 2em ;
+    transition: .3s;
+
+}
+
+.tk-quotes-title{
+    font-family: LD-bold;    
+    color: var(--main-darker-color);
+    background-color: var(--main-lighter-color);
+    font-size: 20px;
+    width: 225px;
+    box-sizing: border-box;
+    padding:10px 5px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+
+
+}
+
+.tk-quotes{
+    font-family: LD-regular;    
+    background-color: white;
+    border: solid 10px var(--main-lighter-color);
+    font-size: 20px;
+    min-height: 200px;
+    max-width: 90%;
+    text-align: left;
+    align-content: center;
+    padding: 10px;
+    border-radius: 0 15px 15px 15px;
+    transition: .3s;
+
+
+}
+
+.tk-sosmed{
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    gap: 1em;
+    color: var(--main-darker-color);
+
+    font-size: 25px;
+}
+
+.tk-sosmed a{
+    text-decoration: none;
+    color: var(--main-darker-color);
+
+}
+
+/* TK-Kiri */
+
+/* TK-kanan */
+.tentang-kami-kanan{
+    width: 60%;
+    align-content: center;
+    background-color: var(--main-lighter-color );
+    height: 500px;
+    border-radius: 150px;
+    position: relative;
+    
+}
+
+.tentang-kami-kanan span{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    
+    background-color: var(--second-color);
+    border-radius: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    align-content: center;
+    font-family: LD-medium;
+    font-size: 30px;
+    cursor: pointer;
+    border: solid var(--main-color) 10px;
+
+    user-select: none;
+
+}
+
+.tn-btn-l{
+    left: -40px;
+    
+}
+.tn-btn-r{
+    right: -40px;
+}
+
+
+.tn-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+    transition: .3s;
+    
+}
+
+.kotak-foto{
+    width: 170px;
+    height: 255px;
+    overflow: hidden;
+    border-radius: 10px ;
+    transition: .3s;
+    filter: blur(2px);
+
+}
+
+.middle{
+    width: 250px;
+    height: 375px;
+    filter: none;
+}
+
+.kotak-foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* TK-kanan */

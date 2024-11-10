@@ -2,8 +2,31 @@
 @font-face {
     font-family: 'Karla';
     src: url('fonts/Karla/static/Karla-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LD-bold';
+    src: url('fonts/Lexend_Deca/static/LexendDeca-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'LD-medium';
+    src: url('fonts/Lexend_Deca/static/LexendDeca-Medium.ttf');
+
+}
+
+@font-face {
+    font-family: 'LD-regular';
+    src: url('fonts/Lexend_Deca/static/LexendDeca-Regular.ttf');
+
+}
+/* valiable */
+
+:root{
+    --main-color: #387478;
+    --main-darker-color: #243642;
+    --main-lighter-color: #5D9B9F;
+    --second-color: #E2F1E7;
 }
 
 
@@ -41,6 +64,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family: Karla;
+    user-select: none;
 }
 ol, ul {
 	list-style: none;
@@ -57,6 +81,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+img {
+    pointer-events: none; /* Mencegah semua interaksi mouse */
+    user-select: none;    /* Mencegah seleksi */
+    -webkit-user-drag: none; /* Khusus untuk mencegah drag di Safari */
+}
 
 /* nav */
 nav{
@@ -66,14 +95,19 @@ nav{
     padding: 20px 50px;
     padding-top: 30px;
     box-sizing: border-box;
-    border-radius: 0 0 25px 25px;
-    background-color: #387478;
+    background-color: var(--main-color);
     transition: .3s;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+
 }
 nav.scrolled{
     width: 100%;
-    position: fixed;
     padding: 10px 50px;
+    /* border-radius: 0 0 25px 25px; */
+    border-bottom: solid 5px var(--main-darker-color);
 }
 
 .logo{
@@ -82,9 +116,9 @@ nav.scrolled{
     font-size: 26px;
     font-weight: bold;
     letter-spacing: 0;
-    color: #243642;
-    background-color: #E2F1E7;
-    border: solid #5D9B9F 6px;
+    color: var(--main-darker-color);
+    background-color: var(--second-color);
+    border: solid var(--main-lighter-color) 6px;
     box-sizing: border-box;
     padding: 10px;
     border-radius: 20px;
@@ -114,14 +148,14 @@ ul.nav-list li:hover{
 ul.nav-list li a{
     text-decoration: none;
     outline: none;
-    color: #E2F1E7;
+    color: var(--second-color);
     user-select: none;
     
 }
 
 .nav-list .nav-active{
-    border: solid #5D9B9F 6px;
-    background-color: #E2F1E7;
+    border: solid var(--main-lighter-color) 6px;
+    background-color: var(--second-color);
     padding: 10px 20px; 
     font-size: large;
     font-weight: bold;
@@ -130,7 +164,7 @@ ul.nav-list li a{
 }
 
 ul.nav-list li.nav-active a{
-    color: #243642;
+    color: var(--main-darker-color);
 }
 ul.nav-list li a i{
     margin-right: 5px;
