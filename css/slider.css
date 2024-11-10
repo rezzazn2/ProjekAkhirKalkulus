@@ -1,13 +1,14 @@
 section.tentang-kami{
    background-color: var(--main-color);
-   padding: 20px 0;
+   padding: 100px 0;
    box-sizing: border-box;
    margin-top: 100px;
 }
 
 .tk-container{
     display: flex;
-    width: 80%;
+    width: 90%;
+    justify-content: space-between;
     margin: 0 auto;
     font-family: LD;
     gap: 2em;
@@ -16,9 +17,9 @@ section.tentang-kami{
 /* TK-Kiri */
 .tentang-kami-kiri{
     font-family: LD-regular;
-    width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .tk-header{
@@ -64,7 +65,7 @@ section.tentang-kami{
 }
 
 .tk-quotes{
-    font-family: LD-regular;    
+    font-family: LD-light;    
     background-color: white;
     border: solid 10px var(--main-lighter-color);
     font-size: 20px;
@@ -75,6 +76,7 @@ section.tentang-kami{
     padding: 10px;
     border-radius: 0 15px 15px 15px;
     transition: .3s;
+    max-width: 520px;
 
 
 }
@@ -99,10 +101,10 @@ section.tentang-kami{
 
 /* TK-kanan */
 .tentang-kami-kanan{
-    width: 60%;
     align-content: center;
     background-color: var(--main-lighter-color );
-    height: 500px;
+    height: 510px;
+    max-width: 1000px;
     border-radius: 150px;
     position: relative;
     
@@ -111,8 +113,7 @@ section.tentang-kami{
 .tentang-kami-kanan span{
     position: absolute;
     width: 60px;
-    height: 60px;
-    
+    height: 60px; 
     background-color: var(--second-color);
     border-radius: 50px;
     top: 50%;
@@ -140,6 +141,7 @@ section.tentang-kami{
 .tn-container{
     display: flex;
     width: 80%;
+    max-width: 900px;
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
