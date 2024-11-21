@@ -1,0 +1,53 @@
+section.beranda{
+    background-color: white;
+    margin-top: 150px;
+    padding: 50px;
+}
+
+.beranda-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bl{
+    color: var(--main-darker-color);
+    flex: .6;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.bl span{
+    font-size: 20px;
+    font-family: LD-light;
+
+}
+
+.bl a.button{
+    display: inline-block;
+    max-width: max-content;
+    text-decoration: none;
+    color: var(--second-color);
+    padding: 17px 50px;
+    box-sizing: content-box;
+    background-color: var(--main-color);
+}
+
+.bl p{
+    max-width: 450px;
+    text-align: justify;
+}
+
+.bl h3{
+    font-size: 46px;
+    font-family: LD-bold;
+    margin-bottom: 10px;
+
+}
+
+.bl .button{
+margin-top: auto;
+}
+
