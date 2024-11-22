@@ -94,6 +94,31 @@ img {
     -webkit-user-drag: none; /* Khusus untuk mencegah drag di Safari */
 }
 
+.header{
+    font-family:LD-bold;
+    color: var(--second-color);
+    font-size: 46px;
+}
+
+.text-bold{
+    font-family: LD-bold;
+}
+
+#calculator{
+    height: 500px;
+    width: 500px;
+}
+
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Hilangkan tampilan spinner */
+  margin: 0; /* Hapus margin default */
+}
+
+
+
+/* Global CSS */
+
 /* nav */
 nav{
     

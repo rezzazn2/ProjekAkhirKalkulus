@@ -1,0 +1,109 @@
+section.hubungi-kami{
+    padding: 100px 0;
+}
+
+.hk-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hk-header{
+    color: var(--main-darker-color);
+    margin-bottom: 1em;
+}
+
+.hk-subcon{
+    display: flex;
+    gap: 2em;
+}
+
+.hk-l{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hk-l h5{
+    font-size: 40px;
+    font-family: LD-light;
+    margin-bottom: .5em;
+}
+.hk-l p{
+    max-width: 55%;
+    text-align: justify;
+
+}
+.hk-l h3{
+    font-size: 46px;
+    font-family: LD-bold;
+    color: var(--main-darker-color);
+    user-select: none;
+    margin-top: auto;
+
+}
+
+.hk-r{
+}
+.hk-r button{
+    font-size: 25px;
+    background-color: var(--main-darker-color);
+    color: white;
+    border: none;
+    padding: 20px 5px;
+    border-radius: 15px;
+}
+.hk-r h5{
+    font-size: 25px;
+    font-family: LD-light;
+    color: white;
+}
+.hk-r input, .hk-r textarea{
+    outline: none;
+    background-color: #316366;
+    color: white;
+    border: none;
+}
+
+.hk-r input{
+    height: 50px;
+    min-width: 380px;
+    padding:0 10px;
+    border-radius: 10px;
+    outline: 0 solid var(--main-darker-color);
+    transition:.1s;
+}
+.hk-r input:focus{
+    outline: 3px solid var(--main-darker-color);
+}
+.hk-r textarea{
+    height: 210px;
+    min-width: 380px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: 0 solid var(--main-darker-color);
+    transition:.1s;
+
+}
+.hk-r textarea:focus{
+    outline: 3px solid var(--main-darker-color);
+
+}
+.hk-r input::placeholder, .hk-r textarea::placeholder{
+    color: white;
+    font-family: LD-thin;
+}
+
+
+.hk-r form{
+    background-color: var(--main-color);
+
+    display: flex;
+    flex-direction: column;
+    padding:50px 20px;
+    
+    border-radius: 20px;
+    gap: 1rem;
+}
+
+
+

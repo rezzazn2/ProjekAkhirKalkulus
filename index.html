@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/beranda.css">
+    <link rel="stylesheet" href="css/materi.css">
+    <link rel="stylesheet" href="css/hubungi.css">
+    <link rel="stylesheet" href="css/kalkulator.css">
+    <script src="https://www.desmos.com/api/v1.0/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+
 </head>
 <body>
     <!-- navbar -->
@@ -30,6 +35,7 @@
         </div>
     </nav>
 
+    <!-- Beranda -->
     <section class="beranda">
         <div class="beranda-container">
             <div class="bl">
@@ -45,9 +51,68 @@
         </div>
     </section>
 
+    <!-- Materi -->
+     <section class="materi">
+        <div class="materi-container">
+            <h1 class="m-header header"> <i class="fa-solid fa-book"></i> Materi</h1>
+            <div class="m-subcon">
 
+                <div class="m-l">
+                    <h5>Pengertian Fungsi Kuadarat</h5>
+                    <p>Fungsi kuadrat adalah fungsi yang disusun oleh persamaan kuadrat berbentuk umum <span class="text-bold">f(x) = ax² + bx + c, dengan a ≠ 0.</span> Grafik fungsi kuadrat berbentuk non-linear dalam koordinat kartesius yaitu berupa parabola. Garis non-linear adalah istilah untuk garis tidak lurus dalam ilmu matematika. Contoh :</p>
+                    <ul>
+                        <li>f(x) = x²</li>
+                        <li>y = -2x²</li>
+                        <li>f(x) = 2x² + x</li>
+                        <li>y = 7x² + 2x + 3</li>
+                        <li>y = -3x² + 3x + 1</li>
+                        <li>f(x) = 3x² + 1</li>
+                        <li>2y = x² + 2x + 1</li>
+                    </ul>
+                </div>
+                <div class="m-r">
+                    <h5>Rumus-rumus dalam Fungsi Kuadrat</h5>
+                    <ul>
+                        <li>Bentuk umum : <span class="text-bold"> f(x) = ax² + bx + c, dengan a ≠ 0.</span></li>
+                        <li>Titik potong dengan sumbu x : <span class="text-bold"> f(x) = y = 0</span></li>
+                        <li>Titik potong dengan sumbu y : <span class="text-bold"> f(0) =  a0² + b0 + c, x = 0</span></li>
+                        <li>Diskriminan / D  : <span class="text-bold"> D = b²– 4ac.</span></li>
+                        <li>Titik puncak/Ekstrim/Balik : <span class="text-bold"> (xp,yp) = (-b/2a, -D/4a) </span></li>
+                        
+                    </ul>
+                </div>
 
-
+            </div>
+        </div>
+     </section>
+     
+     <!-- Kalkulator -->
+      <section class="kalkulator">
+        <div class="kalkulator-container">
+            <h1 class="hk-header header"> <i class="fa-solid fa-calculator"></i> Kalkulator</h1>
+            <div class="kal-subcon">
+                <div class="kal-l">
+                    <h5> f(x) = ax² + bx + c, a ≠ 0</h5>
+                    <form action="" id="quadraticForm">
+                        <div class="input-kal "><span>a</span><input type="number" class="no-arrows" id="a" required></div>
+                        <div class="input-kal "><span>b</span><input type="number" class="no-arrows" id="b" required></div>
+                        <div class="input-kal "><span>c</span><input type="number" class="no-arrows" id="c"></div>
+                        <button>Hitung</button>
+                    </form>
+                    <ul>
+                        <li>Titik potong dengan sumbu x : <span id="potong-x"></span></li>
+                        <li>Titik potong dengan sumbu y : <span id="potong-y"></span></li>
+                        <li>Diskriminan / D  : <span id="d"></span></li>
+                        <li>Titik puncak/Ekstrim/Balik : <span id="ekstrim"></span></li>
+                        
+                    </ul>
+                </div>
+                <div class="kal-r">
+                    <div id="calculator"></div>
+                </div>
+            </div>
+        </div>
+      </section>
 
     <!-- tentang kami -->
     <section class="tentang-kami">
@@ -94,9 +159,29 @@
 
     </section>
 
+    <!-- Hubungi Kami -->
+    <section class="hubungi-kami">
+        <div class="hk-container">
+            <h1 class="hk-header header"> <i class="fa-solid fa-phone"></i> Hubungi Kami</h1>
+            <div class="hk-subcon">
+                <div class="hk-l">
+                    <h5>Saran & Masukan</h5>
+                    <p>Jika anda memiliki keluhan atau ada hal yang ingin anda sampaikan kepada pembuat website ini, Anda bisa mengirim pesan lewat form di kanan berikut</p>
+                    <h3>Kalkulex²</h3>
+                </div>
 
-
-
+                <div class="hk-r">
+                    <form action="">
+                        <h5>Berikan kami sebuah pesan</h5>
+                        <input type="text" placeholder="Nama anda" required> 
+                        <input type="email" placeholder="Email anda" required>
+                        <textarea name="" id="" placeholder="Pesan anda" required></textarea>
+                        <button> Kirim <i class="fa-solid fa-location-arrow"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Footer -->
@@ -134,7 +219,7 @@
 
     <!-- <div class="panjang"></div> -->
     <script src="js/slider.js"></script>
-
+    <script src="js/kalkulator.js"></script>
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/18c9c6e968.js" crossorigin="anonymous"></script>
 </body>

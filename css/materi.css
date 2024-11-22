@@ -1,0 +1,64 @@
+section.materi{
+    background-color: var(--main-color);
+    padding: 100px 0;
+}
+
+.materi-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.m-subcon{
+    display: flex;
+    gap: 2em;
+}
+
+.m-subcon h5{
+    font-size: 36px;
+    font-family: LD-medium;
+    color: var(--main-darker-color);
+    margin: 2em 0 1em;
+    position: relative;
+}
+.m-subcon h5::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 15px;
+    left: -22px;
+
+    background-color: var(--main-darker-color);
+}
+
+.m-l{
+    flex: 1;
+}
+.m-r{
+    flex: 1;
+}
+
+.m-r ul{
+    list-style-type:circle;
+    font-family: LD-light;
+    color: var(--second-color);
+    font-size: 20px;
+    line-height: 25px;
+}
+.m-l p{
+    max-width: 70%;
+    text-align: justify;
+
+    font-family: LD-light;
+    line-height: 20px;
+    color: var(--second-color);
+    margin-bottom: 1em;
+}
+
+.m-l ul{
+    list-style-type:circle;
+    font-family: LD-light;
+    color: var(--second-color);
+    font-size: 20px;
+    line-height: 25px;
+}
+

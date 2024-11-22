@@ -1,6 +1,7 @@
 footer{
     background-color: var(--main-darker-color);
-    height: 230px;
+    height: 250px;
+    padding: 50px 0;
     align-content: center;
 }
 
