@@ -108,10 +108,7 @@ img {
     font-family: LD-bold;
 }
 
-#calculator{
-    height: 500px;
-    width: 500px;
-}
+
 
 
 .no-arrows::-webkit-inner-spin-button,
@@ -180,9 +177,9 @@ ul.nav-list li{
     transition: transform .1s;
     transform-origin: center;
 }
-ul.nav-list li:hover{
+/* ul.nav-list li:hover{
     transform: scale(1.1);
-}
+} */
 ul.nav-list li a{
     text-decoration: none;
     outline: none;

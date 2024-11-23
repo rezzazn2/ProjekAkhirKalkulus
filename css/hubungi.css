@@ -51,6 +51,7 @@ section.hubungi-kami{
     border: none;
     padding: 20px 5px;
     border-radius: 15px;
+    cursor: pointer;
 }
 .hk-r h5{
     font-size: 25px;

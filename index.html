@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/hubungi.css">
     <link rel="stylesheet" href="css/kalkulator.css">
     <script src="https://www.desmos.com/api/v1.0/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </head>
 <body>
@@ -26,11 +27,11 @@
     
             <!-- list nav -->
              <ul class="nav-list">
-                <li class="nav-active"><a href="#beranda"> <i class="fa-solid fa-house"></i> Beranda</a></li>
-                <li><a href="#materi"><i class="fa-solid fa-book"></i> Materi</a></li>
-                <li><a href="#kalkulator"><i class="fa-solid fa-calculator"></i> Kalkulator</a></li>
-                <li><a href="#tentang"><i class="fa-solid fa-users"></i> Tentang kami</a></li>
-                <li><a href="#hubungi"><i class="fa-solid fa-phone"></i>Hubungi Kami</a></li>
+                <li class="nav-active nav-beranda"><a href="#beranda"> <i class="fa-solid fa-house"></i> Beranda</a></li>
+                <li class=" nav-materi"><a href="#materi"><i class="fa-solid fa-book"></i> Materi</a></li>
+                <li class=" nav-kalkulator"><a href="#kalkulator"><i class="fa-solid fa-calculator"></i> Kalkulator</a></li>
+                <li class=" nav-tentang"><a href="#tentang"><i class="fa-solid fa-users"></i> Tentang kami</a></li>
+                <li class=" nav-hubungi"><a href="#hubungi"><i class="fa-solid fa-phone"></i>Hubungi Kami</a></li>
              </ul>
 
         </div>
@@ -44,7 +45,7 @@
                 <h3>Website Kalkulex²</h3>
                 <p>Tempat belajar Mata Kuliah kalkulus khusus materi Funsgi Kuadrat/Parabola/Pangkat 2 yang menggunakan platform web, yang pastinya memudahkan pengguna dalam belajar, mengakes materi dan efisien.</p>
 
-                <a href="" class="button">Cus ke materi</a>
+                <a href="#materi" class="button">Cus ke materi</a>
             </div>
             <div class="br">
                 <img src="svg/Group 10.svg" alt="">
@@ -172,13 +173,13 @@
                 </div>
 
                 <div class="hk-r">
-                    <form action="">
-                        <h5>Berikan kami sebuah pesan</h5>
-                        <input type="text" placeholder="Nama anda" required> 
-                        <input type="email" placeholder="Email anda" required>
-                        <textarea name="" id="" placeholder="Pesan anda" required></textarea>
-                        <button> Kirim <i class="fa-solid fa-location-arrow"></i></button>
-                    </form>
+                        <form >
+                            <h5>Berikan kami sebuah pesan</h5>
+                            <input type="text" placeholder="Nama anda" id="from_name" required> 
+                            <input type="email" placeholder="Email anda" id="from_email" required>
+                            <textarea name="" id="message" placeholder="Pesan anda"  required></textarea>
+                            <button onclick="sendMail();"> Kirim <i class="fa-solid fa-location-arrow"></i></button>
+                        </form>
                 </div>
             </div>
         </div>
@@ -222,6 +223,7 @@
     <script src="js/slider.js"></script>
     <script src="js/kalkulator.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/emailjs.js"></script>
     <script src="https://kit.fontawesome.com/18c9c6e968.js" crossorigin="anonymous"></script>
 </body>
 </html>

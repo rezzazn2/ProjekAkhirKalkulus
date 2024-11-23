@@ -75,5 +75,10 @@ section.kalkulator{
     flex: .7;
 }
 
+#calculator{
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+}
 
 
