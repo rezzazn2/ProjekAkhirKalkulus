@@ -2,7 +2,6 @@ section.tentang-kami{
    background-color: var(--main-color);
    padding: 100px 0;
    box-sizing: border-box;
-   margin-top: 100px;
 }
 
 .tk-container{
@@ -94,7 +93,7 @@ section.tentang-kami{
 .tk-sosmed a{
     text-decoration: none;
     color: var(--main-darker-color);
-
+    margin-top: 1em;
 }
 
 /* TK-Kiri */
@@ -172,3 +171,51 @@ section.tentang-kami{
     object-fit: cover;
 }
 /* TK-kanan */
+
+
+@media (min-width: 0) and (max-width: 720px) {
+    .tk-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+        font-family: LD;
+        gap: 2em;
+    }
+
+    .tentang-kami-kanan{
+        align-content: center;
+        background-color: var(--main-lighter-color );
+        height: 400px;
+        max-width: 480px;
+        border-radius: 40px;
+        position: relative;
+        margin: 0 auto;
+        
+    }
+
+    .kotak-foto{
+        width: 100px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px ;
+        transition: .3s;
+        filter: blur(2px);
+    
+    }
+    
+    .middle{
+        width: 200px;
+        height: 300px;
+        filter: none;
+    }
+    
+    .kotak-foto img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+}

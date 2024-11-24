@@ -1,11 +1,24 @@
  // Tunggu hingga halaman sepenuhnya dimuat sebelum menjalankan kode
  window.onload = function() {
     const form = document.getElementById('quadraticForm');
-    const calculator = Desmos.GraphingCalculator(document.getElementById('calculator'));
+    const elt = document.getElementById('calculator');
+    const calculator = Desmos.GraphingCalculator(elt, {
+        expressions: false, 
+        keypad: false       
+      });
     const potongX =document.getElementById('potong-x');
     const potongY =document.getElementById('potong-y');
     const d =document.getElementById('d');
     const ekstrim =document.getElementById('ekstrim');
+
+    function setInitialZoom() {
+        calculator.setMathBounds({
+          left: -100,   // Batas kiri sumbu x
+          right: 100,   // Batas kanan sumbu x
+          bottom: -100, // Batas bawah sumbu y
+          top: 100     // Batas atas sumbu y
+        });
+      }
 
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Mencegah form dari pengiriman default
@@ -17,7 +30,7 @@
         // Mengatur grafik fungsi kuadrat
         const equation = `${a}x^2 + ${b}x + ${c}`;
         calculator.setExpression({ id: 'quadratic', latex: equation });
-
+        
         // Menghitung Diskriminan
         const discriminant = b * b - 4 * a * c;
 
@@ -46,6 +59,6 @@
         potongY.innerHTML = yIntercept;
         d.innerHTML = discriminant;
         ekstrim.innerHTML = strim;
-
+        setInitialZoom();
     });
 };

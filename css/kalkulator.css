@@ -52,7 +52,6 @@ section.kalkulator{
     text-align: center;
 }
 .kal-l button{
-    height: 100%;
     padding: 0 20px;
     border: none;
     background-color: var(--main-color);
@@ -80,5 +79,26 @@ section.kalkulator{
     width: 500px;
     margin-left: auto;
 }
+
+@media (min-width: 0) and (max-width: 720px) {
+    .kal-subcon{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .kal-l{
+        gap: 1em;
+    }
+
+    #calculator{
+        height: 500px;
+        width: 500px;
+        margin: 0 auto;
+    }
+  
+    
+}
+
 
 

@@ -83,7 +83,7 @@ section.hubungi-kami{
     border-radius: 10px;
     outline: 0 solid var(--main-darker-color);
     transition:.1s;
-
+    resize: none;
 }
 .hk-r textarea:focus{
     outline: 3px solid var(--main-darker-color);
@@ -104,6 +104,32 @@ section.hubungi-kami{
     
     border-radius: 20px;
     gap: 1rem;
+}
+
+@media (min-width: 0) and (max-width: 720px) {
+    .hk-subcon{
+        flex-direction: column;
+    }
+    .hk-l h3{
+        margin-top: 1em;
+        text-align: center;
+    }
+    
+
+    .hk-r{
+        margin: 0 auto
+    }
+    .hk-r form{
+        background-color: var(--main-color);
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        padding:50px 20px;
+        
+        border-radius: 20px;
+        gap: 1rem;
+    }
+    
 }
 
 

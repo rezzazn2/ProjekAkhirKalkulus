@@ -62,3 +62,20 @@ section.materi{
     line-height: 25px;
 }
 
+@media (min-width: 0) and (max-width: 720px) {
+    .m-subcon{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 0 1em;
+    }    
+    .m-r ul li{
+        font-size: 16px;
+    }
+    
+    .m-l p{
+        max-width: 100%;
+    }
+    
+}
+

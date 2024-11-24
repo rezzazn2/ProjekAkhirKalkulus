@@ -1,16 +1,27 @@
 
 const navbar = document.querySelector('nav');
-const navList = document.querySelectorAll(".nav-list")[0].children;
+const navListChildren = document.querySelectorAll(".nav-list")[0].children;
 
 // Fungsi untuk mengatur kelas aktif pada elemen navList
 const setActiveNav = (index) => {
     // Hapus semua kelas "nav-active" dari semua elemen
-    for (let i = 0; i < navList.length; i++) {
-        navList[i].classList.remove("nav-active");
+    for (let i = 0; i < navListChildren.length; i++) {
+        navListChildren[i].classList.remove("nav-active");
     }
     // Tambahkan kelas "nav-active" pada elemen dengan index tertentu
-    navList[index].classList.add("nav-active");
+    navListChildren[index].classList.add("nav-active");
 };
+
+// nav respon
+const bars = document.getElementById('bars');
+const navKeluar = document.getElementById('nav-keluar');
+const navList = document.querySelector(".nav-list");
+bars.addEventListener('click', () => {  
+    navList.style.right = "0";
+});
+navKeluar.addEventListener('click', () => {  
+    navList.style.right = "100%";
+});
 
 
 window.addEventListener('scroll', () => {

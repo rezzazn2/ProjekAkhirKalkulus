@@ -15,8 +15,8 @@ const wa = sosmed.querySelector('.tk-sosmed-wa');
 console.log(nama)
 
 const us = [
-    ["Muhammad Rezza", "247006111182", "\"Apa ajalah yang penting beres gw mah\"","https://www.facebook.com/muhammad.rezza.58726/","https://www.instagram.com/rezzaree_/","0851-7160-1665"],
     ["M Gibran Fajar", "247006111181", "\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, iure quam et sunt non at dignissimos nam.\"","","","0851-7160-6969"],
+    ["Muhammad Rezza", "247006111182", "\"Apa ajalah yang penting beres gw mah\"","https://www.facebook.com/muhammad.rezza.58726/","https://www.instagram.com/rezzaree_/","0851-7160-1665"],
     ["Sammi Zaki Fadillah", "247006111191", "\" Porro fugiat magni dolor itaque reprehenderit, optio consequatur delectus eveniet omnis alias, minus quae. Quas.\"","","","0838-6328-3662"]
 ]
 
